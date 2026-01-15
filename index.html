@@ -74,12 +74,16 @@ img{max-width:100%;border-radius:8px;margin-top:5px}
 <button onclick="saveMeeting()">Save</button>
 </div>
 
-<div class="card hidden" id="qrPage">
-<h3>Generate QR</h3>
-<select id="qrMeetingSelect"></select>
-<input id="qrParentName" placeholder="Enter parent name">
-<button onclick="generateQR()">Generate QR</button>
-<div id="qrcodeContainer"></div>
+<div class="card hidden" id="generateQR">
+  <button class="back-btn" onclick="goBack()">⬅ Back</button>
+  <h2>Generate QR</h2>
+  
+  <select id="qrMeetingSelect"></select>
+  <input id="qrParentName" placeholder="Enter parent name">
+  <button onclick="generateQR()">Generate QR</button>
+
+  <div id="qrcodeContainer"></div>
+</div>
 
 <div class="card hidden" id="scanTeacher">
 <h3>Scan QR</h3>
@@ -226,3 +230,4 @@ function renderParentAnalytics(){
 </script>
 </body>
 </html>
+
